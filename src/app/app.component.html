@@ -7,11 +7,17 @@
                 <mat-icon>
                     face
                 </mat-icon>
-                <span>Signup</span>
+                <span class="nav-caption">Signup</span>
 
             </a>
-            <a mat-list-item routerLink="/login">Login</a>
-            <a mat-list-item routerLink="/training">Training</a>
+            <a mat-list-item routerLink="/login">
+            <mat-icon>accessibility_new</mat-icon>
+            <span class="nav-caption">Login</span>
+        </a>
+            <a mat-list-item routerLink="/training">
+            <mat-icon>fitness_center</mat-icon>
+            <span class="nav-caption">Training</span>
+        </a>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content id="mat-elevate">
@@ -20,7 +26,7 @@
                 <button mat-icon-button (click)="sidenav.toggle()">
                     <mat-icon>menu</mat-icon>
 
-                </button>
+                </button>   
 
             </div>
 
